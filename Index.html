@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css">
+    <!--Icon Link-->
+    <link rel = "icon" href = "./cricket.png"> 
+    <style>
+        * {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body style="background-color: #babe31;">
+    <div class="container" style="text-align: center;">
+        <div style="font-size: 40px;font-family: Georgia, 'Times New Roman', Times, serif;">
+            Cricket10
+        </div>
+
+        <hr style="background-color: black;">
+
+        <!--Row1-->
+        <div class="row">
+            <!--col1-->
+            <div class="col-5">
+                <div class="team-name" style="font-family:cursive;font-size:20px;">
+                    Team 1 Score
+                </div>
+                <div class="score m-2" id="team-1-score">0</div>
+                <button class="btn  btn-primary" style="border: 1px solid rgb(58, 121, 7);" id="team1">Hit 1</button>
+            </div>
+
+            <!--Col2-->
+            <div class="col-2">
+                <div class="timer" >
+                    Timer
+                    <p class="count-down"></p>
+                </div>
+                <button class=" btn btn-primary" style="border: 1px solid rgb(58, 121, 7);" id="start">Start</button>
+            </div>
+
+            <!--Col3-->
+            <div class="col-5">
+                <div class="team-name" style="font-family:cursive;font-size:20px;">
+                    Team 2 Score
+                </div>
+                <div class="score m-2" id="team-2-score">0</div>
+                <button class="btn  btn-primary" style="border: 1px solid rgb(58, 121, 7);" id="team2">Hit 2</button>
+            </div>
+        </div>
+        
+        <hr style="background-color: black;">
+
+        <div class="scoreBoard">
+            
+            <div class="row">
+                <!--Table 1-->
+                <div class="col-5">
+                    <div class="scoreBoard-1"></div>
+                </div>
+                <!--Stats-->
+                <div class="col-2">
+                    <button class="result btn btn-primary" style="margin-top:45px;border: 1px solid rgb(58, 121, 7);">GENERATE RESULT</button>
+                    <p class="match-scores" style="padding-top: 40px;">Match Won By</p>
+
+                    <hr>
+                    
+                    <p class="bestPlayer">Man Of The Match</p>
+                </div>
+                <!--Table 2-->
+                <div class="col-5">
+                    <div class="scoreBoard-2"></div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</div>
+</body>
+
+</html>
